@@ -70,6 +70,11 @@ GEMINI_DEFAULT_MODEL=gemini-1.5-pro # Optional
 MISTRAL_API_KEY=your_mistral_api_key_here
 MISTRAL_API_BASE_URL=your_mistral_base_url_here # Optional
 MISTRAL_DEFAULT_MODEL=mistral-large-latest # Optional
+
+# SiliconFlow API Configuration
+SILICONFLOW_API_KEY=your_siliconflow_api_key_here
+SILICONFLOW_API_BASE_URL=your_siliconflow_base_url_here # Optional
+SILICONFLOW_DEFAULT_MODEL=siliconflow-default # Optional
 ```
 
 ### Code Configuration
@@ -103,7 +108,7 @@ async function main() {
     messages: [{ role: 'user', content: 'Hello, how are you?' }],
     requestId: 'request-1',
   });
-  
+
   console.log(response);
 }
 ```
